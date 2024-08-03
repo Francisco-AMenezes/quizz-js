@@ -10,15 +10,11 @@ let actualQuestion = 0;
 // Perguntas
 const questions = [
   {
-    question: "Qual é a técnica utilizada para detectar ondas gravitacionais causadas pela fusão de buracos negros?",
+    question: 'Qual é a técnica utilizada para detectar ondas gravitacionais causadas pela fusão de buracos negros?',
     answers: [
       {
         answer: "Interferometria de Laser",
         correct: true,
-      },
-      {
-        answer: "Interferometría de Laser",
-        correct: false,
       },
       {
         answer: "Astrometria de Radiofrequência",
@@ -28,31 +24,35 @@ const questions = [
         answer: "Fotometria de Alta Precisão",
         correct: false,
       },
+      {
+        answer: "Espectroscopia de Absorção",
+        correct: false,
+      },
     ],
   },
   {
-    question: "Qual foi a missão espacial responsável por obter a primeira imagem de um buraco negro?",
+    question: 'Qual foi a missão espacial responsável por obter a primeira imagem de um buraco negro?',
     answers: [
       {
         answer: "Event Horizon Telescope",
         correct: true,
       },
       {
-        answer: "Efeito Horizon Telescope",
+        answer: "Very Large Telescope",
         correct: false,
       },
       {
-        answer: "Very Large Array",
+        answer: "Hubble Space Telescope",
         correct: false,
       },
       {
-        answer: "Chandra X-ray Observatory",
+        answer: "James Webb Space Telescope",
         correct: false,
       },
     ],
   },
   {
-    question: "Qual é o nome do fenômeno que descreve a aceleração da expansão do universo devido à energia escura?",
+    question: 'Qual é o nome do fenômeno que descreve a aceleração da expansão do universo devido à energia escura?',
     answers: [
       {
         answer: "Expansão Cosmológica",
@@ -73,7 +73,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é a previsão teórica para a massa de um axion, uma partícula hipotética candidata à matéria escura?",
+    question: 'Qual é a previsão teórica para a massa de um axion, uma partícula hipotética candidata à matéria escura?',
     answers: [
       {
         answer: "10^-5 eV",
@@ -94,7 +94,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é a principal evidência observacional para a existência da matéria escura?",
+    question: 'Qual é a principal evidência observacional para a existência da matéria escura?',
     answers: [
       {
         answer: "Curvas de rotação das galáxias",
@@ -115,7 +115,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é o fenômeno responsável pela produção de neutrinos de alta energia em núcleos ativos de galáxias?",
+    question: 'Qual é o fenômeno responsável pela produção de neutrinos de alta energia em núcleos ativos de galáxias?',
     answers: [
       {
         answer: "Interações hadrônicas em jatos relativísticos",
@@ -136,7 +136,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é o nome do instrumento que mediu a polarização da radiação cósmica de fundo em micro-ondas?",
+    question: 'Qual é o nome do instrumento que mediu a polarização da radiação cósmica de fundo em micro-ondas?',
     answers: [
       {
         answer: "BICEP2",
@@ -157,7 +157,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é a técnica mais utilizada atualmente para detectar exoplanetas em torno de outras estrelas?",
+    question: 'Qual é a técnica mais utilizada atualmente para detectar exoplanetas em torno de outras estrelas?',
     answers: [
       {
         answer: "Método de Trânsito",
@@ -178,7 +178,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é o conceito que descreve a 'reionização' do universo?",
+    question: 'Qual é o conceito que descreve a "reionização" do universo?',
     answers: [
       {
         answer: "Reionização é a era em que o gás hidrogênio no universo foi reionizado por radiação de alta energia.",
@@ -199,7 +199,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é a principal hipótese sobre a origem dos FRBs (Fast Radio Bursts)?",
+    question: 'Qual é a principal hipótese sobre a origem dos FRBs (Fast Radio Bursts)?',
     answers: [
       {
         answer: "Magnetares em rotação rápida",
@@ -220,7 +220,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é o nome do fenômeno que ocorre quando duas estrelas de nêutrons se fundem?",
+    question: 'Qual é o nome do fenômeno que ocorre quando duas estrelas de nêutrons se fundem?',
     answers: [
       {
         answer: "Kilonova",
@@ -241,7 +241,7 @@ const questions = [
     ],
   },
   {
-    question: "Qual é a interpretação do efeito 'lente gravitacional' na teoria da relatividade geral?",
+    question: 'Qual é a interpretação do efeito "lente gravitacional" na teoria da relatividade geral?',
     answers: [
       {
         answer: "A luz é desviada pela curvatura do espaço-tempo causada por um objeto massivo.",
@@ -257,174 +257,6 @@ const questions = [
       },
       {
         answer: "A luz é desviada pela interação com campos magnéticos intensos.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a principal evidência para a existência de buracos negros supermassivos nos centros das galáxias?",
-    answers: [
-      {
-        answer: "Velocidades orbitais de estrelas próximas ao centro galáctico",
-        correct: true,
-      },
-      {
-        answer: "Emissão de raios X de alta energia",
-        correct: false,
-      },
-      {
-        answer: "Curvas de luz de microlentes gravitacionais",
-        correct: false,
-      },
-      {
-        answer: "Oscilações de pulsares no centro galáctico",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é o papel da matéria escura na formação das estruturas do universo?",
-    answers: [
-      {
-        answer: "A matéria escura fornece a gravidade necessária para a formação de galáxias e aglomerados.",
-        correct: true,
-      },
-      {
-        answer: "A matéria escura impede a formação de buracos negros supermassivos.",
-        correct: false,
-      },
-      {
-        answer: "A matéria escura acelera a expansão do universo.",
-        correct: false,
-      },
-      {
-        answer: "A matéria escura causa a ionização de gás hidrogênio no universo.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a natureza da radiação de Hawking e sua relação com buracos negros?",
-    answers: [
-      {
-        answer: "Radiação de Hawking é a emissão de partículas devido a efeitos quânticos perto do horizonte de eventos de um buraco negro.",
-        correct: true,
-      },
-      {
-        answer: "Radiação de Hawking é a emissão de partículas devido à rotação rápida de um buraco negro.",
-        correct: false,
-      },
-      {
-        answer: "Radiação de Hawking é a emissão de neutrinos de um buraco negro em colapso.",
-        correct: false,
-      },
-      {
-        answer: "Radiação de Hawking é a emissão de luz visível de buracos negros ativos.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a significância da descoberta das ondas gravitacionais para a astrofísica moderna?",
-    answers: [
-      {
-        answer: "Confirma a previsão da teoria da relatividade geral sobre a ondulação do espaço-tempo.",
-        correct: true,
-      },
-      {
-        answer: "Prova a existência de matéria escura no universo.",
-        correct: false,
-      },
-      {
-        answer: "Explica a aceleração da expansão do universo.",
-        correct: false,
-      },
-      {
-        answer: "Confirma a hipótese de inflação cósmica.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a principal técnica utilizada para mapear a distribuição de matéria escura no universo?",
-    answers: [
-      {
-        answer: "Lente gravitacional fraca",
-        correct: true,
-      },
-      {
-        answer: "Fotometria de alta precisão",
-        correct: false,
-      },
-      {
-        answer: "Velocimetria de galáxias",
-        correct: false,
-      },
-      {
-        answer: "Astrometria de precisão",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a implicação da descoberta da 'energia escura' no modelo cosmológico padrão?",
-    answers: [
-      {
-        answer: "A energia escura representa a maior parte da energia total do universo e causa a aceleração da expansão cósmica.",
-        correct: true,
-      },
-      {
-        answer: "A energia escura causa a formação de buracos negros supermassivos.",
-        correct: false,
-      },
-      {
-        answer: "A energia escura impede a formação de galáxias anãs.",
-        correct: false,
-      },
-      {
-        answer: "A energia escura explica a formação de estrelas de nêutrons.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é o papel dos quasares na compreensão do universo primitivo?",
-    answers: [
-      {
-        answer: "Quasares são utilizados como faróis para estudar a distribuição de matéria no universo jovem.",
-        correct: true,
-      },
-      {
-        answer: "Quasares ajudam a medir a constante de Hubble.",
-        correct: false,
-      },
-      {
-        answer: "Quasares confirmam a existência de ondas gravitacionais.",
-        correct: false,
-      },
-      {
-        answer: "Quasares são responsáveis pela formação de galáxias espirais.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: "Qual é a principal teoria que explica a formação de estruturas a larga escala no universo?",
-    answers: [
-      {
-        answer: "Teoria da Instabilidade de Jeans",
-        correct: true,
-      },
-      {
-        answer: "Teoria da Captura Gravitacional",
-        correct: false,
-      },
-      {
-        answer: "Teoria da Fusão Galáctica",
-        correct: false,
-      },
-      {
-        answer: "Teoria da Recombinação de Hidrogênio",
         correct: false,
       },
     ],
@@ -498,7 +330,6 @@ function checkAnswer(btn) {
       if (btn === button) {
         //incrementa os pontos
         points++;
-      } else {
       }
     } else {
       button.classList.add("wrong-answer");
@@ -540,17 +371,18 @@ function showSuccessMessage() {
 
   correctAnswers.textContent = points;
 
-  //altera o número de perguntas totais
-  const questionsQuantity = document.querySelector('#questions-qty')
-  questionsQuantity.textContent = questions.length
+  //alterar o número de perguntas totais
+  const questionsQuantity = document.querySelector('#questions-qty');
+  questionsQuantity.textContent = questions.length;
 }
 
-//Reinicia o Quizz
-const restartButton = document.querySelector('#restart')
+const restartButton = document.querySelector('#restart');
 
 restartButton.addEventListener('click', function() {
-    location.reload()
-})
+    location.reload();
+});
 
 // Inicializando o Quizz
 init();
+
+console.log(questions.length)
