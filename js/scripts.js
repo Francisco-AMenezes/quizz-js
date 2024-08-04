@@ -8,256 +8,133 @@ let points = 0;
 let actualQuestion = 0;
 
 // Perguntas
+
 const questions = [
   {
-    question: 'Qual é a técnica utilizada para detectar ondas gravitacionais causadas pela fusão de buracos negros?',
+    question: 'Quem "adotou" o Bastion?:',
     answers: [
       {
-        answer: "Interferometria de Laser",
+        answer: "Torbjörn",
         correct: true,
       },
       {
-        answer: "Astrometria de Radiofrequência",
+        answer: "Reinhardt",
         correct: false,
       },
       {
-        answer: "Fotometria de Alta Precisão",
+        answer: "Soujorn",
         correct: false,
       },
       {
-        answer: "Espectroscopia de Absorção",
+        answer: "Tracer",
+        correct: false,
+      },
+    ],
+  },
+
+  {
+    question: "Qual o nome da Tracer?:",
+    answers: [
+      {
+        answer: "Olivia Colomar",
+        correct: false,
+      },
+      {
+        answer: "Vivian Chase",
+        correct: false,
+      },
+      {
+        answer: "Lena Oxton",
+        correct: true,
+      },
+      {
+        answer: "Amélie Lacroix",
         correct: false,
       },
     ],
   },
   {
-    question: 'Qual foi a missão espacial responsável por obter a primeira imagem de um buraco negro?',
+    question: "Quem costumava alimentar o Pet da Soujurn com resto de comida?:",
     answers: [
       {
-        answer: "Event Horizon Telescope",
+        answer: "Reinhardt",
+        correct: false,
+      },
+      {
+        answer: "Mercy",
         correct: true,
       },
       {
-        answer: "Very Large Telescope",
+        answer: "Ana",
         correct: false,
       },
       {
-        answer: "Hubble Space Telescope",
-        correct: false,
-      },
-      {
-        answer: "James Webb Space Telescope",
+        answer: "Soldado: 76",
         correct: false,
       },
     ],
   },
   {
-    question: 'Qual é o nome do fenômeno que descreve a aceleração da expansão do universo devido à energia escura?',
+    question: "Quem foi o líder do Monastério de Shambali?:",
     answers: [
       {
-        answer: "Expansão Cosmológica",
+        answer: "Zenyatta",
         correct: false,
       },
       {
-        answer: "Constante Cosmológica",
+        answer: "Genji",
+        correct: false,
+      },
+      {
+        answer: "Ramattra",
+        correct: false,
+      },
+      {
+        answer: "Mondatta",
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: "Qual destes personagens possui parentesco com Genji e Hanzo?:",
+    answers: [
+      {
+        answer: "Kiriko",
         correct: true,
       },
       {
-        answer: "Pressão de Radiação",
+        answer: "Mei",
         correct: false,
       },
       {
-        answer: "Expansão Exponencial",
+        answer: "Mercy",
+        correct: false,
+      },
+      {
+        answer: "Tracer",
         correct: false,
       },
     ],
   },
   {
-    question: 'Qual é a previsão teórica para a massa de um axion, uma partícula hipotética candidata à matéria escura?',
+    question:
+      "Qual destes personagens não habitou a estação espacial internacional?:",
     answers: [
       {
-        answer: "10^-5 eV",
+        answer: "Winston",
+        correct: false,
+      },
+      {
+        answer: "Hammond",
+        correct: false,
+      },
+      {
+        answer: "Sigma",
+        correct: false,
+      },
+      {
+        answer: "Tracer",
         correct: true,
-      },
-      {
-        answer: "10^-2 eV",
-        correct: false,
-      },
-      {
-        answer: "10^-7 eV",
-        correct: false,
-      },
-      {
-        answer: "10^-10 eV",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é a principal evidência observacional para a existência da matéria escura?',
-    answers: [
-      {
-        answer: "Curvas de rotação das galáxias",
-        correct: true,
-      },
-      {
-        answer: "Lente gravitacional fraca",
-        correct: false,
-      },
-      {
-        answer: "Radiação cósmica de fundo",
-        correct: false,
-      },
-      {
-        answer: "Velocidade de recessão de quasares",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é o fenômeno responsável pela produção de neutrinos de alta energia em núcleos ativos de galáxias?',
-    answers: [
-      {
-        answer: "Interações hadrônicas em jatos relativísticos",
-        correct: true,
-      },
-      {
-        answer: "Decaimento beta inverso",
-        correct: false,
-      },
-      {
-        answer: "Análise de pulsares",
-        correct: false,
-      },
-      {
-        answer: "Oscilações de neutrinos",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é o nome do instrumento que mediu a polarização da radiação cósmica de fundo em micro-ondas?',
-    answers: [
-      {
-        answer: "BICEP2",
-        correct: true,
-      },
-      {
-        answer: "Hubble Space Telescope",
-        correct: false,
-      },
-      {
-        answer: "James Webb Space Telescope",
-        correct: false,
-      },
-      {
-        answer: "Kepler Space Telescope",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é a técnica mais utilizada atualmente para detectar exoplanetas em torno de outras estrelas?',
-    answers: [
-      {
-        answer: "Método de Trânsito",
-        correct: true,
-      },
-      {
-        answer: "Microlente gravitacional",
-        correct: false,
-      },
-      {
-        answer: "Astrometria de precisão",
-        correct: false,
-      },
-      {
-        answer: "Imagens diretas",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é o conceito que descreve a "reionização" do universo?',
-    answers: [
-      {
-        answer: "Reionização é a era em que o gás hidrogênio no universo foi reionizado por radiação de alta energia.",
-        correct: true,
-      },
-      {
-        answer: "Reionização é a era em que o gás hélio no universo foi reionizado por radiação de alta energia.",
-        correct: false,
-      },
-      {
-        answer: "Reionização é a era em que o universo passou de um estado ionizado para um estado neutro.",
-        correct: false,
-      },
-      {
-        answer: "Reionização é a era em que as galáxias começaram a se formar no universo.",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é a principal hipótese sobre a origem dos FRBs (Fast Radio Bursts)?',
-    answers: [
-      {
-        answer: "Magnetares em rotação rápida",
-        correct: true,
-      },
-      {
-        answer: "Pulsares em rotação rápida",
-        correct: false,
-      },
-      {
-        answer: "Colapsos de buracos negros",
-        correct: false,
-      },
-      {
-        answer: "Explosões de supernovas",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é o nome do fenômeno que ocorre quando duas estrelas de nêutrons se fundem?',
-    answers: [
-      {
-        answer: "Kilonova",
-        correct: true,
-      },
-      {
-        answer: "Supernova",
-        correct: false,
-      },
-      {
-        answer: "Hipernova",
-        correct: false,
-      },
-      {
-        answer: "Micronova",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Qual é a interpretação do efeito "lente gravitacional" na teoria da relatividade geral?',
-    answers: [
-      {
-        answer: "A luz é desviada pela curvatura do espaço-tempo causada por um objeto massivo.",
-        correct: true,
-      },
-      {
-        answer: "A luz é desviada pela velocidade de rotação de um objeto massivo.",
-        correct: false,
-      },
-      {
-        answer: "A luz é desviada pela interação com partículas de matéria escura.",
-        correct: false,
-      },
-      {
-        answer: "A luz é desviada pela interação com campos magnéticos intensos.",
-        correct: false,
       },
     ],
   },
@@ -330,6 +207,7 @@ function checkAnswer(btn) {
       if (btn === button) {
         //incrementa os pontos
         points++;
+      } else {
       }
     } else {
       button.classList.add("wrong-answer");
@@ -346,7 +224,7 @@ function nextQuestion() {
   setTimeout(function () {
     //verifica se já está na última pergunta
     if (actualQuestion >= questions.length) {
-      // apresenta a mensagem de sucesso
+      // aperesenta a mensagem de sucesso
       showSuccessMessage();
     }
 
@@ -366,23 +244,23 @@ function showSuccessMessage() {
 
   displayScore.textContent = score.toString();
 
-  //alterar o número de perguntas corretas
+  //aterar o número de perguntas corretas
   const correctAnswers = document.querySelector("#correct-answers");
 
   correctAnswers.textContent = points;
 
-  //alterar o número de perguntas totais
-  const questionsQuantity = document.querySelector('#questions-qty');
-  questionsQuantity.textContent = questions.length;
+  //altera o número de perguntas totais
+  const questionsQuantity = document.querySelector('#questions-qty')
+  questionsQuantity.textContent = questions.length
 }
 
-const restartButton = document.querySelector('#restart');
+
+const restartButton = document.querySelector('#restart')
 
 restartButton.addEventListener('click', function() {
-    location.reload();
-});
+    location.reload()
+})
+
 
 // Inicializando o Quizz
 init();
-
-console.log(questions.length)
